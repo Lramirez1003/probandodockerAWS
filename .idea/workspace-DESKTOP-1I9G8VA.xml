@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd1e0d6c-6351-4105-9859-c6e11037c82a" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FxXjosfgIv5550ieJr3NmF6NzP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Cesar_Ramirez/OneDrive - Pontificia Universidad Católica Madre y Maestra/Clase/13th/Programacion Web Avanzada ISC - 517 DOCS/Practica 2/Practica2Mocky/src/main/java/pucmm/edu/eitc/practica2mocky/services",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "f9bfe221b7ebee424008af8270b3e6ab"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pucmm.edu.eitc.practica2mocky.repo" />
+      <recent name="pucmm.edu.eitc.practica2mocky.encapsulaciones" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Cesar_Ramirez\OneDrive - Pontificia Universidad Católica Madre y Maestra\Clase\13th\Programacion Web Avanzada ISC - 517 DOCS\Practica 2\Practica2Mocky\src\main\java\pucmm\edu\eitc\practica2mocky\services" />
+      <recent name="C:\Users\Cesar_Ramirez\OneDrive - Pontificia Universidad Católica Madre y Maestra\Clase\13th\Programacion Web Avanzada ISC - 517 DOCS\Practica 2\Practica2Mocky\src\main\java\pucmm\edu\eitc\practica2mocky\config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Practica2MockyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Practica2Mocky.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pucmm.edu.eitc.practica2mocky.Practica2MockyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd1e0d6c-6351-4105-9859-c6e11037c82a" name="Changes" comment="" />
+      <created>1665434848389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665434848389</updated>
+      <workItem from="1665434850330" duration="2615000" />
+      <workItem from="1665440321997" duration="2237000" />
+      <workItem from="1665443526109" duration="2905000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

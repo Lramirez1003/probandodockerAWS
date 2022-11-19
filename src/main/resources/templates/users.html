@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Usuarios</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-light" >
+    <div class="container">
+
+        <a class="navbar-brand text-dark" th:text="MockeClone" th:href="@{proyectos}">Mocky Clone</a>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
+                <a class="nav-item nav-link text-dark" th:text="#{header1}" th:href="@{proyectos}">Proyectos</a>
+                <a class="nav-item nav-link text-dark" th:text="#{header2}" th:href="@{usuarios}">Usuarios</a>
+                <span class="nav-link text-dark" th:text="#{lang.change}"></span>:
+                <a class="nav-item nav-link active text-dark" th:if="${logged == 'si'}" th:href="@{/logout}">Cerrar Sesión</a>
+                <a class="nav-item nav-link active text-dark" th:th:unless="${logged == 'si'}" th:href="@{login}">Iniciar Sesión</a>
+                <br><br>
+                <li class="nav-item ">
+                    <select id="locales" class="">
+                        <option value="" th:text="#{lenguaje1}"></option>
+                        <option value="en" th:text="#{lenguaje2}"></option>
+                    </select>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div  style="width: 80%">
+        <div class="card-body" style="width: 80%; margin-left: 9%">
+            <a class="btn btn-dark" th:href="@{addUser}" th:text="'+' + #{user1}"></a>
+        </div>
+        <th:block th:each = "user : ${users}">
+            <div class="mx-auto" style="width: 80%">
+                <div class="card ">
+                    <div class="card-body pl-6 pr-6">
+                        <h4 class="card-title" th:text="${user.nombre}+'/'+${user.getRol()}"></h4>
+                        <a class="card-text"  th:href="@{verProyectos (username = ${user.getUsuario()})}">Ver proyectos</a>
+                        <div class="btn-toolbar" role="toolbar">
+                            <div class="btn-group me-2" role="group">
+                                <a th:href="@{modUser(id = ${user.getUsuario()})}" class="btn btn-dark" th:text="#{proyecto1}">Administrar</a>
+                            </div>
+                            <div class="btn-group me-2" role="group">
+                                <a th:href="@{eliminarUser(id = ${user.getUsuario()})}" class="btn btn-outline-danger" th:text="#{eliminar}">Eliminar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </th:block>
+    </div>
+</div >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#locales").change(function () {
+            var selectedOption = $('#locales').val();
+            if (selectedOption != 'bla'){
+                window.location.replace('?lang=' + selectedOption);
+            }
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

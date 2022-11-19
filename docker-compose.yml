@@ -1,0 +1,51 @@
+version: '3.8'
+services:
+  app-web:
+    build: .
+    ports:
+      - 8080:8080
+
+    env_file:
+      - .env
+
+    environment:
+      - NOMBRE_APP=Prueba
+
+    depends_on:
+      - base-datos
+    networks:
+      - red-app
+
+  base-datos:
+    image: mysql:5.7.26
+
+    env_file:
+      - .env
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345678
+      - MYSQL_USER=ADMIN
+      - MYSQL_DATABASE=REST_Mock
+    volumes:
+      - ~/data_mysql:/var/lib/mysql
+    networks:
+      - red-app
+
+
+
+  phpmyadmin:
+    image: phpmyadmin:5.1.1
+    env_file:
+      - .env
+    ports:
+      - 8082:8082
+    environment:
+      - PMA_ARBITRARY=1
+      - ServerName=Server
+    networks:
+      - red-app
+
+    depends_on:
+      - base-datos
+
+networks:
+  red-app:
